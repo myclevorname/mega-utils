@@ -1,0 +1,12 @@
+[package]
+name = "mega-utils"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "cat"
+path = "src/cat.rs"
+
+[dependencies]
+ai = { version = "0.2.11", features = ["ollama_client"] }
+tokio = { version = "1.44.1", features = ["macros", "rt", "rt-multi-thread", "tokio-macros"] }
